@@ -5,10 +5,11 @@ import javax.swing.*;
 import java.util.*;
 import java.io.*;
 
+
 public class Frogger extends JFrame
 {
-	private static final int WIDTH = 224;
-	private static final int HEIGHT = 256;
+	private static final int WIDTH = 896;
+	private static final int HEIGHT = 1024;
 	
 	public Frogger() throws IOException
 	{
@@ -17,11 +18,15 @@ public class Frogger extends JFrame
 		setSize(WIDTH,HEIGHT);
 		setLocation(650,0);
 		
+		getContentPane().add(new Screen() );
 		
 		setVisible(true);	
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
+	
+	
+	
 	
 	public static void main( String args[] ) throws IOException
 	{
